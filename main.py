@@ -26,7 +26,9 @@ if __name__ == "__main__":
         jobs = json.load(file)
     #TODO: Load avaialble roles from a file at some point
     player_role = []
-    available_roles = ["tank", "tank", "regen", "shield", "melee", "magic", "ranged", "dps"]
+    available_roles = []
+    with open("players/roles.json", "r+") as file:
+        available_roles = json.load(file)
     for player in players:
         completed = False
         while(not completed):
