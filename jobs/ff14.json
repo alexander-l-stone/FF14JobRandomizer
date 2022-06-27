@@ -1,0 +1,78 @@
+{
+    "PLD": {
+        "full": "Paladin",
+        "role": ["tank"]
+    },
+    "DRK": {
+        "full": "Dark Knight",
+        "role": ["tank"]
+    },
+    "WAR": {
+        "full": "Warrior",
+        "role": ["tank"]
+    },
+    "GUN": {
+        "full": "Gunbreaker",
+        "role": ["tank"]
+    },
+    "SGE": {
+        "full": "Sage",
+        "role": ["healer", "shield"]
+    },
+    "WHM": {
+        "full": "White Mage",
+        "role": ["healer", "regen"]
+    },
+    "AST": {
+        "full": "Astrologian",
+        "role": ["healer", "regen"]
+    },
+    "SCH": {
+        "full": "Scholar",
+        "role": ["healer", "shield"]
+    },
+    "DRG": {
+        "full": "Dragoon",
+        "role": ["melee", "dps"]
+    },
+    "MNK": {
+        "full": "Monk",
+        "role": ["melee", "dps"]
+    },
+    "NIN": {
+        "full": "Ninja",
+        "role": ["melee", "dps"]
+    },
+    "RPR": {
+        "full": "Reaper",
+        "role": ["melee", "dps"]
+    },
+    "SAM": {
+        "full": "Samurai",
+        "role": ["melee", "dps"]
+    },
+    "BLM": {
+        "full": "Black Mage",
+        "role": ["magic", "dps"]
+    },
+    "RDM": {
+        "full": "Red Mage",
+        "role": ["magic", "dps"]
+    },
+    "SUM": {
+        "full": "Summoner",
+        "role": ["magic", "dps"]
+    },
+    "BRD": {
+        "full": "Bard",
+        "role": ["ranged", "dps"]
+    },
+    "DNC": {
+        "full": "Dancer",
+        "role": ["ranged", "dps"]
+    },
+    "MCH": {
+        "full": "Machinist",
+        "role": ["ranged", "dps"]
+    }
+}
