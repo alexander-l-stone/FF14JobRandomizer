@@ -1,5 +1,6 @@
 import json
 import random
+import argparse
 
 def sortPlayers(element): 
     return len(element["available_jobs"])
@@ -16,11 +17,28 @@ def sortByJob(element):
     elif 'ranged' in element['role']:
         return 4
 
+def openFile(filepath):
+    content = None
+    with open(filepath, 'r+') as file:
+        content = file
+    return content
+
+# def 
+
 if __name__ == "__main__":
-    players = []
+    ap = argparse.ArgumentParser()
+    ap.add_argument("teamname")
+    args = ap.parse_args()
+    with open("players/teams.json", "r+") as file:
+        teams = json.load(file)
+    team = teams[args.teamname]
     with open("players/players.json", "r+") as file:
         players = json.load(file)
-    players.sort(key=sortPlayers)
+    teamplayers = []
+    for player in players:
+        if player["name"] in team:
+            teamplayers.append(player)
+    teamplayers.sort(key=sortPlayers)
     jobs = {}
     with open("jobs/ff14.json", "r+") as file:
         jobs = json.load(file)
@@ -29,7 +47,7 @@ if __name__ == "__main__":
     available_roles = []
     with open("players/roles.json", "r+") as file:
         available_roles = json.load(file)
-    for player in players:
+    for player in teamplayers:
         completed = False
         while(not completed):
             random_job = player["available_jobs"][random.randint(0, len(player["available_jobs"])-1)]
