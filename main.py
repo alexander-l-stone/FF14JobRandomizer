@@ -27,6 +27,7 @@ def openFile(filepath):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
+    ap.add_argument("role_set")
     ap.add_argument("teamname")
     args = ap.parse_args()
     with open("players/teams.json", "r+") as file:
@@ -46,7 +47,8 @@ if __name__ == "__main__":
     player_role = []
     available_roles = []
     with open("players/roles.json", "r+") as file:
-        available_roles = json.load(file)
+        roles_file = json.load(file)
+        available_roles = roles_file[args.teamname]
     for player in teamplayers:
         completed = False
         while(not completed):
