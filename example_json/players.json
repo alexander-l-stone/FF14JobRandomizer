@@ -1,0 +1,34 @@
+[
+    {
+        "name": "IPlayEverything",
+        "available_jobs": ["DRK", "PLD", "GNB", "WAR", "MNK", "NIN", "SAM", "DRG", "RPR", "DNC", "BRD", "MCH", "RDM", "SUM", "BLM", "WHM", "SGE", "AST", "SCH"]
+    },
+    {
+        "name": "HealersOnly",
+        "available_jobs": ["WHM", "SGE", "AST", "SCH"]
+    },
+    {
+        "name": "BLMMain",
+        "available_jobs": ["BLM"]
+    },
+    {
+        "name": "TankerJo",
+        "available_jobs": ["DRK", "PLD", "GNB", "WAR"]
+    },
+    {
+        "name": "WeeabooFitin",
+        "available_jobs": ["MNK", "NIN", "SAM", "DRG", "RPR"]
+    },
+    {
+        "name": "MetaSlave",
+        "available_jobs": ["DRK", "PLD", "GNB", "WAR", "MNK", "NIN", "SAM", "DRG", "RPR", "DNC", "BRD", "MCH", "RDM", "SUM", "BLM", "WHM", "SGE", "AST", "SCH"]
+    },
+    {
+        "name": "Miss_Jumpy_Rabbit",
+        "available_jobs": ["DNC", "BRD", "MCH", "RDM", "SUM", "BLM", "WHM", "SGE", "AST", "SCH"]
+    },
+    {
+        "name": "Camelot",
+        "available_jobs": ["DRK", "PLD", "GNB", "WAR", "MNK", "NIN", "SAM", "DRG", "RPR", "DNC", "BRD", "MCH", "RDM", "SUM", "BLM", "WHM", "SGE", "AST", "SCH"]
+    }
+]
