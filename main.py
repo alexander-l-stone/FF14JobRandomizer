@@ -12,7 +12,7 @@ def sortByJob(element):
         return 1
     elif 'melee' in element['role']:
         return 2
-    elif 'magic' in element['role']:
+    elif 'caster' in element['role']:
         return 3
     elif 'ranged' in element['role']:
         return 4
@@ -23,17 +23,16 @@ def openFile(filepath):
         content = file
     return content
 
-# def 
-
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("role_set")
     ap.add_argument("teamname")
     args = ap.parse_args()
-    with open("players/teams.json", "r+") as file:
+    with open("json/teams.json", "r+") as file:
         teams = json.load(file)
-    team = teams[args.teamname]
-    with open("players/players.json", "r+") as file:
+    if args.teamname in teams:
+        team = teams[args.teamname]
+    with open("json/players.json", "r+") as file:
         players = json.load(file)
     teamplayers = []
     for player in players:
@@ -41,14 +40,13 @@ if __name__ == "__main__":
             teamplayers.append(player)
     teamplayers.sort(key=sortPlayers)
     jobs = {}
-    with open("jobs/ff14.json", "r+") as file:
+    with open("games/ff14.json", "r+") as file:
         jobs = json.load(file)
-    #TODO: Load avaialble roles from a file at some point
     player_role = []
     available_roles = []
-    with open("players/roles.json", "r+") as file:
+    with open("json/compositions.json", "r+") as file:
         roles_file = json.load(file)
-        available_roles = roles_file[args.teamname]
+        available_roles = roles_file[args.role_set]
     for player in teamplayers:
         completed = False
         while(not completed):

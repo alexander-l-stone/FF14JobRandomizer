@@ -1,0 +1,5 @@
+{
+    "Raid": ["tank", "tank", "shield", "regen", "melee", "ranged", "caster", "dps"],
+    "DegenRaid": ["tank", "tank", "healer", "healer", "dps", "dps", "dps", "dps"],
+    "Dungeon": ["tank", "healer", "dps", "dps"]
+}

@@ -53,15 +53,15 @@
     },
     "BLM": {
         "full": "Black Mage",
-        "role": ["magic", "dps"]
+        "role": ["caster", "dps"]
     },
     "RDM": {
         "full": "Red Mage",
-        "role": ["magic", "dps"]
+        "role": ["caster", "dps"]
     },
     "SUM": {
         "full": "Summoner",
-        "role": ["magic", "dps"]
+        "role": ["caster", "dps"]
     },
     "BRD": {
         "full": "Bard",

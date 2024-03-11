@@ -1,0 +1,5 @@
+{
+    "Static": ["IPlayEverything", "HealersOnly", "BLMMain", "TankerJo", "WeeabooFitin", "MetaSlave", "Miss_Jumpy_Rabbit", "Camelot"],
+    "CriterionTeam1": ["IPlayEverything", "HealersOnly", "BLMMain", "TankerJo"],
+    "CriterionTeam2": ["WeeabooFitin", "MetaSlave", "Miss_Jumpy_Rabbit", "Camelot"]
+}
