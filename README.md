@@ -1,3 +1,9 @@
+## What is this
+
+Is your static bored? Have you cleared the tier and have months of wait time? Do you want to see your friends in pain as they play an unfamiliar job? Look no further then this, the FF14JobRandomizer.
+
+This small Python application will let you generate random roles for every player, constrained by whatever composition you need to actually run the content you want. 
+
 ## Installation and Set Up
 
 First install Python version 3.10 or greater. You can find Pyton at their website here(https://www.python.org/).
