@@ -51,6 +51,10 @@
         "full": "Samurai",
         "role": ["melee", "dps"]
     },
+    "VPR": {
+        "full": "Viper",
+        "role": ["melee", "dps"]
+    },
     "BLM": {
         "full": "Black Mage",
         "role": ["caster", "dps"]
@@ -61,6 +65,10 @@
     },
     "SUM": {
         "full": "Summoner",
+        "role": ["caster", "dps"]
+    },
+    "PCT": {
+        "full": "Pictomancer",
         "role": ["caster", "dps"]
     },
     "BRD": {
